@@ -1,0 +1,12 @@
+
+# calenadrio mes 
+# importe bibliotecas  
+import calendar
+from datetime  import date 
+# declação de variaveis
+mes = date.today().month
+ano = date.today().year
+
+# import o caendario do mes 
+
+print(calendar.month(ano, mes))
