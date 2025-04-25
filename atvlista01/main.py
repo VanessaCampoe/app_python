@@ -1,5 +1,6 @@
 # crie um programa que receba do usuario uma lista de compras e ordene a lista em ordem alfabetica \n
 # , apenas os nomes dos item , seu seus valores .
+# faça o commit no git 
 
 # declarar a lista  
 compra = []
