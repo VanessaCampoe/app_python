@@ -25,11 +25,12 @@ try:
 # verifica o valor se o item esta vazio ou nao 
         if item !="":
             lista.append(item) # insere o item na lista 
-            print(f"{item }inserido com sucesso !") #mensagem de confirmação 
+            print(f"{item }  inserido com sucesso !") #mensagem de confirmação 
             continue
         else:
             break
-    # ordenar a lista atravez do e saber q alista original deixa de existir 
+    # ordenar a lista atravez do e saber q alista original deixa de
+    #  existir lembrando que o comando sert ordena numeros de forma crecente tb 
     lista.sort()
 except Exception as e:
      print(f' Não foi possivel inserir item na lista .{e}.')
