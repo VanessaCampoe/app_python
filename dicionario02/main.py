@@ -6,5 +6,6 @@ usuario  = dict(nome =" Fulano de tal",idade= 18 , email = "fulando@gmail.com")
 
 for chave in usuario :
     print(f"{chave.title()}: {usuario[chave]}.")
+    
 
  
