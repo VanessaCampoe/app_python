@@ -15,24 +15,24 @@ dados = {
     'idade': 40,
    
 }
+
 cpf = input("Informe o seu CPF: ")
 e_mail = input("Informe o seu e-mail: ")
 genero = input("Informe o seu genero: ")
 telefone = input("Informe o seu telefone: ")
-
 altura = input("Informe a sua altura: ")
 peso = input("Informe o seu peso: ")
 tipo_sanguineo = input("Informe o seu tipo sanguineo: ")
 imc = float(peso) / (float(altura) ** 2)
-print(f"Atualização do usuario \n{dados} a seguir são: \n{cpf}, \n{e_mail}@gmail.com, \n {genero},\n{telefone}, \n{altura}, \n{peso}, \n{tipo_sanguineo}. \nSeu imac é:{imc}")
+print(f"Atualização do usuario \n{dados} a seguir são: \n{cpf}, \n{e_mail}@gmail.com, 
+      \n {genero},\n{telefone}, \n{altura}, \n{peso}, \n{tipo_sanguineo}. \nSeu imac
+      é:{imc}")
 
 
 
 
 
-
-
-
+# sem loop , e o laço de repetição pode se opcional 
 
 
 
