@@ -37,9 +37,9 @@ try:
     elif imc <= 35:
         print (f"{usuario.get('nome')} esta  obeso  ")
     elif imc <= 40:
-        print (f"{usuario.get('nome')} esta com obasidade tipo II")
+        print (f"{usuario.get('nome')} esta com obesidade tipo II")
     else:
-        print (f"{usuario.get('nome')} esta com obasidade morbida. Procure um medico !!!")
+        print (f"{usuario.get('nome')} esta com obesidade morbida. Procure um medico !!!")
 except Exception as e:
     print(f"Não fo possivel inserir os dados.{e}. ")
     
