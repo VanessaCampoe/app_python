@@ -16,41 +16,68 @@ nome, cpf , e-mail, data de nascimento , gênero
 """
 
 import os 
-pessoas = []
+
+lista  = [] # seu erro começõu aqui , erra pessoaas e virou lista , reveja para naao acontecer mais , faça o esquema de do fluxograma 
+
 try:
  #TODO
 
     
     while True:
+        usuario = {} # dicionario
         # menu interavito 
+        print(f"{'='*20} CRUD COBRA {'='*20}")
+        print("O que voce deseja fazer ?")
         print("\n ---Menu ---")
+        print("Sair do programa ")
         print("1 - Cadastrar nova pessoa ")
         print("2 - Listar pessoas cadastradas ")
         print("3 - Alterar dados de uma pessoa")
         print("4 - Excluir pessoa")
         print("5 - Sair")
-        opção = input("Escolha uma opção: (1-5): ")
+       
+
+
+        opção = input("\n Informe a opção desejada: ")
+
         match opção:
-            case "1":
-               pessoa = {}
-               
-               
-    match cadastrar:
-            case "s":
-                pessoa = {}
+            case "0":
+              print = {"\n programa encerrado!\n"}
+              break
+            case "1": 
+             # errro  usuario = {}             
+    
+          
+              
                 
-                pessoa[" nome"] = input("Digite o nome: ")
-                pessoa['email'] = input("Digite o email: ")
-                pessoa['cpf'] = input("Digite o cpf da pessoa: ")
-                
-                pessoa['data_nascimento'] = input("Digite a data de nascimento: ")
-                pessoa['genero'] = input("Digite o gênero: ")
-                pessoas.append(pessoa)             
-               
-               
-               
-               
-               
+              usuario[" nome"] = input("Digite o nome: ")
+              usuario['email'] = input("Digite o email: ")
+              usuario['cpf'] = input("Digite o cpf da pessoa: ") 
+              usuario['telefone'] = input("Digite o telefone: ")               
+              usuario['data_nascimento'] = input("Digite a data de nascimento: ")
+              usuario['genero'] = input("Digite o gênero: ")
+
+
+              lista.append(usuario)   # erro grave aqui viu , prestar ateção na interpretação 
+              os.system ('cls' if os.name == 'nt' else 'clear')
+              print(f"{usuario.get("nome") } cadastrada com sucesso!\n")
+              continue
+
+
+            case "2": # o segundo caso  #listar para cadastrar
+              os.system ('cls' )
+              for i in range(len(lista)):
+                print(f"Posiçao: {i}")
+                #NOTE  alterar a linha a baixo
+                for chave in lista[i]:
+                #NOTE  alterar a linha a baixo
+                  print(f"{Chave.title()}:{ lista[i].get(chave)}")
+                print("\n")
+                continue  
+            case "_":
+              print("Opção invalida")
+              continue
+
 except Exception as e:
     print(f" Não foi possivel castradar a pessoa.  {e}")             
                
