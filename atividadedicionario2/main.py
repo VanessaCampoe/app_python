@@ -74,9 +74,39 @@ try:
                   print(f"{Chave.title()}:{ lista[i].get(chave)}")
                 print("\n")
                 continue  
-            case "_":
-              print("Opção invalida")
-              continue
+            case "3":
+              os.system("cls")
+              posicao = int(input("informe a posição do usuario que deseja alterar: "))
+              if lista [posicao]:
+                  for chave in lista[posicao]:
+                    print(f"{chave.title()}: {lista[posicao].get(chave)}")
+                    print("\n")
+                    dado = input("Informe o nome da chava que deseja alterar:")
+                    if lista [posicao] [dado]:
+                        lista [posicao] [dado] = input(f"Informe novo valor{dado}:")
+                        os.system("cls")
+                        print("Dados alterados com sucesso!\n")
+                    else:
+                        print("Chave invalida")
+
+                  else:
+                      print("Posição invalida")
+                  continue
+            case "4":
+                  os.system("cls")
+                  posicao  = int (input("Informe a posição do usuario que deseja deletar :"))
+                  if lista[posicao]:
+                    del(lista[posicao])
+                    os.system("cls")
+                    print("Usuario deletado com sucesso !")
+                  else:
+                      print("Não foi possivel deletar o usuario!")
+                  continue
+
+
+          case_:
+              print("Opção invalida!")
+               continue
 
 except Exception as e:
     print(f" Não foi possivel castradar a pessoa.  {e}")             
