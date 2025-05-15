@@ -5,7 +5,7 @@ def dar_boas_vindas(nome):
 
 # algoritimo principal
 nome = input('informe seu nome:')
-dar_boas_vindas(nomes)
+dar_boas_vindas(nome)
 
 
 

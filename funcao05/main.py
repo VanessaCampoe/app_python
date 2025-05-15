@@ -10,11 +10,13 @@ if __name__ == "__main__":
         
         print("Escolha a figura de qual deseja calcular a área: \n")
         print("1 - Quadrilatero ")
-        print("2- triangulo")
-        opcao = input("Opcao desejada: ")
-        if opcao == "1" or opcao == "2":
+        print("2 - triangulo")
+        print("3 - trapezio")
+        opcao = input("Opcao desejada: ").strip()
+        if opcao == "1" or opcao == "2" :
             b = float (input("informe o valor da base:").replace("," , "."))
             h = float (input("informe o valor da altura:").replace("," , ".")) 
+             
             match opcao:
                 case" 1" :
                     resultado = calcular_quadrilatero (b, h)
@@ -23,6 +25,12 @@ if __name__ == "__main__":
                 case" 2":
                     resultado = calcular_triangulo (b, h)
                     print(f"Area do triangulo :{ resultado }")
+                case" 3 ":
+                    b = float(input("Informe o valor da base menor: ").replace(",", "."))
+                    B = float(input("Informe o valor da base maior: ").replace(",", "."))
+                    h = float(input("Informe o valor da altura: ").replace(",", "."))
+                    resultado = calcular_trapezio(b, B, h)
+                    print(f"Área do trapézio: {resultado:.2f}")
         else:
             print ("opcao inavalida . Proprama encerrado!")
             
