@@ -18,7 +18,7 @@ auto.write("tab ate Sign in ")
 auto.press("enter")
 auto.write("vanessacampoe2@gmail.com")  
 auto.press("tab")
-auto.write("a258700921")  
+auto.write)  
 auto.press("enter")
 auto.hotkey("ctrl", "l")  # Focar na barra de endereços
 auto.write("https://github.com/VanessaCampoe/app_python")   
